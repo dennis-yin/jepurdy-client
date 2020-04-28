@@ -1,0 +1,24 @@
+$board-height: 45rem;
+
+.viewTile {
+  grid-column: 2 / 8;
+  grid-row: 2;
+  background-color: rgb(11, 19, 112);
+  background-image: url("https://www.transparenttextures.com/patterns/snow.png");
+  height: $board-height;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: solid black;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-weight: 600;
+  font-size: 3em;
+  padding: 0 0.5em 0 0.5em;
+
+  section .wager-form .MuiInputBase-root {
+    background-color: white;
+  }
+}

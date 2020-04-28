@@ -1,0 +1,31 @@
+$board-height: 45rem;
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 3rem $board-height 3rem 6rem;
+}
+
+.game div:nth-child(1):not(.viewTile) {
+  grid-column: 2;
+}
+
+.game div:nth-child(2) {
+  grid-column: 3;
+}
+
+.game div:nth-child(3) {
+  grid-column: 4;
+}
+
+.game div:nth-child(4) {
+  grid-column: 5;
+}
+
+.game div:nth-child(5) {
+  grid-column: 6;
+}
+
+.game div:nth-child(6) {
+  grid-column: 7;
+}
