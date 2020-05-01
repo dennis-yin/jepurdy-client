@@ -6,7 +6,7 @@ $board-height: 45rem;
   grid-template-rows: 3rem $board-height 3rem 6rem;
 }
 
-.game div:nth-child(1):not(.viewTile) {
+.game div:nth-child(1):not(.viewTile):not(.spinner) {
   grid-column: 2;
 }
 

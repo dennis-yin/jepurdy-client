@@ -6,7 +6,7 @@ import Game from "./components/Game";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./scss/App.scss";
 
-const socket = io.connect("https://jepurdy-server.herokuapp.com/");
+const socket = io.connect("http://localhost:8080");
 
 const App = () => (
   <SocketContext.Provider value={socket}>
