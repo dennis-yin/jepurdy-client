@@ -19,9 +19,15 @@ const Game = () => {
   const [gameOver, setGameOver] = useState(false);
 
   useEffect(() => {
-    socket.on("toggleLoading", () => setLoading(!loading));
+    socket.on("toggleLoading", () => {
+      console.log("toggleLoading");
+      return setLoading(!loading);
+    });
 
-    socket.on("tileData", (tiles) => setTiles(tiles));
+    socket.on("tileData", (tiles) => {
+      console.log("tileData");
+      return setTiles(tiles);
+    });
 
     socket.on("playerData", (playersInLobby) => setPlayers(playersInLobby));
 
