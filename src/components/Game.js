@@ -40,6 +40,7 @@ const Game = () => {
     socket.on("showResults", () => setGameOver(true));
 
     return () => {
+      socket.off("toggleLoading");
       socket.off("tileData");
       socket.off("playerData");
       socket.off("tileSelection");
