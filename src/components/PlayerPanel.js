@@ -2,6 +2,7 @@ import React from "react";
 import "../scss/PlayerPanel.scss";
 
 const PlayerPanel = ({ players }) => {
+  console.log(players)
   return (
     <>
       <section className="player-panel">

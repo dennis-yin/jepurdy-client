@@ -29,9 +29,14 @@ const Game = () => {
       return setTiles(tiles);
     });
 
-    socket.on("playerData", (playersInLobby) => setPlayers(playersInLobby));
-
+    socket.on("playerData", (playersInLobby) => {
+      console.log("Players: ", playersInLobby)
+      setPlayers(playersInLobby);
+    })
+    
     socket.on("tileSelection", (tile) => setSelectedTile(tile));
+
+    // socket.on("playerToAnswer", () =>)
 
     socket.on("validWager", () => {
       if (wagerError) {
